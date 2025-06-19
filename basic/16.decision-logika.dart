@@ -25,4 +25,8 @@ void main() {
     default:
       print('Nilai Tidak Valid');
   }
+  // ternary operator
+  var nilai = 70;
+  var status = (nilai >= 75) ? 'Lulus' : 'Tidak Lulus';
+  print('Status Anda: $status');
 }
