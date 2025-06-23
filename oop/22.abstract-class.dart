@@ -5,6 +5,7 @@ import 'data-import/location.dart';
 void main() {
   var city = Kota('Jakarta');
   print(city);
+  city.display(); // Output: Kota: Jakarta
 
   // var lokasi = Lokasi('Bali'); // error karena Lokasi adalah kelas abstrak
 }
