@@ -21,6 +21,13 @@ class PersegiPanjang {
   }
 }
 
+class Kotak {
+  int _panjang = 0;
+
+  int get panjangnya => _panjang; //pakai expression body
+  set panjangnya(int value) => _panjang = value; //pakai expression body
+}
+
 void main() {
   var persegiPanjang = PersegiPanjang();
 
