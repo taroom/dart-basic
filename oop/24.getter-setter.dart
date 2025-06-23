@@ -6,6 +6,8 @@ class PersegiPanjang {
   // tapi dalam prakteknya lebih baik mengikuti konvensi penamaan yang umum digunakan
   int get panjangnya => _panjang;
   set panjangnya(int value) {
+    // ini contoh setter yang baik, memiliki logika tambahan untuk validasi
+
     if (value < 0) {
       throw Exception('Panjang tidak boleh negatif');
     }
@@ -40,3 +42,6 @@ void main() {
     print('Error: $e');
   }
 }
+
+// konklusi: dalam dart sebenarnya getter dan setter itu tidak wajib ada, tapi lebih baik ada untuk menjaga enkapsulasi
+// untuk menjaga kesederhanaan tidak diperlukan menggunakan getter dan setter jika tidak ada logika tambahan
