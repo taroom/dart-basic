@@ -26,7 +26,11 @@ class Person {
 class PersonVip extends Person {
   PersonVip(String firstName, String lastName)
       : super(firstName,
-            lastName); // memanggil constructor parent, menggunakan bentuk redirect constructor
+            lastName) // memanggil constructor parent, menggunakan bentuk redirect constructor, tidak perlu body, tapi jika ke superclass boleh memiliki body jika diperlukan. (tidak berlaku ketika konteksnya redirect constructor ke class itu sendiri)
+  {
+    print("PersonVip constructor called over super constructor");
+  }
+
   String appName =
       "Belajar Dart VIP"; // field override, mengganti field appName dari class Person
 
