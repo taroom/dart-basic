@@ -8,3 +8,7 @@ class Sum {
     return firstNum + secondNum;
   }
 }
+
+typedef Jumlahkan = Sum;
+typedef Totalkan = Sum;
+// memberikan Sum class alias pemanggilan seperti Jumlahkan dan Totalkan
