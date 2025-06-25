@@ -18,9 +18,12 @@ class Validation {
 void main() {
   try {
     Validation.validate("d", "s");
-  } catch (e) {
+  } catch (e, sT) {
+    //st dari Stack Trace, dimana jika exception tidak menangkap posisi error, stackTrace yang akan menunjukkannya
+
     //ini akan menangkap semua exception
     print("Error: ${e.toString()}");
+    print("Stack Trace: ${sT.toString()}");
   }
 
   try {
